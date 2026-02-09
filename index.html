@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Pro Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="greeting">Halo, Pelajar!</h1>
+            <p id="date-display"></p>
+        </header>
+
+        <main class="grid-container">
+            <section class="card todo-section">
+                <h3>📚 Daftar Tugas</h3>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Tambah tugas baru...">
+                    <button id="add-btn">Tambah</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </section>
+
+            <section class="card timer-section">
+                <h3>⏱️ Focus Timer</h3>
+                <div class="timer-display" id="timer">25:00</div>
+                <div class="timer-controls">
+                    <button id="start-timer">Start</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+                <p class="timer-label">Tetap fokus, raih mimpimu!</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
